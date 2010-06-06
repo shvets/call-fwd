@@ -15,6 +15,12 @@
     </requirement>
     <requirement>
       <requirement>
+        <dependency name="heroku" version="0" bound="GREATER_OR_EQUAL" git="false" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
         <dependency name="highline" version="0" bound="GREATER_OR_EQUAL" git="false" />
       </requirement>
       <source from="Gemfile" />

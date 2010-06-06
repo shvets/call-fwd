@@ -9,5 +9,6 @@ gem "vegas"
 gem "launchy"
 gem "haml"
 gem "webrat"
+gem "heroku"
 
 gem "rspec", :require => "spec"

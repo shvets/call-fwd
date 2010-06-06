@@ -11,6 +11,6 @@ app = Rack::Builder.new {
 
 run app
 
-require 'launchy'
-
-Launchy::Browser.run("http://localhost:9292")
+#require 'launchy'
+#
+#Launchy::Browser.run("http://localhost:9292")
