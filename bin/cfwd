@@ -1,0 +1,31 @@
+#!/usr/bin/env ruby
+# encoding: utf-8
+
+require 'rubygems' unless RUBY_VERSION =~ /1.9.*/
+
+$:.unshift(File::join(File::dirname(File::dirname(__FILE__)), "lib"))
+
+$KCODE='u'
+
+require 'cfwd'
+
+trap('INT') { puts "Program was interrupted..."; exit }
+
+if __FILE__ == $0
+  service = CallFwdService.new
+  credentials = PasswordManager.ask_credentials
+
+  if ARGV.size == 0
+    command = '+'
+  else
+    command = ARGV.shift
+  end
+
+  case command
+    when '+' then
+      puts service.enable *credentials
+
+    when '-' then
+      puts service.disable *credentials
+  end
+end

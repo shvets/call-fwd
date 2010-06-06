@@ -1,0 +1,35 @@
+:javascript
+  function setFwdFlag(value) {
+    document.getElementsByName("fwd_flag")[0].value = value;
+  }
+
+%a{:href => "logout"}="Logout"
+%br
+%br
+
+%label
+  ="Username:"
+  = session[:usrename]
+%br/
+%br/
+
+%label
+  = "Phone Number:"
+  = session[:phone]
+%br/
+%br/
+
+%label
+  ="Call Forwarding:"
+%form{:action => "/call_fwd", :method => "post"}
+  %input{:type => 'hidden', :name => 'username', :value => session[:usrename]}
+  %input{:type => 'hidden', :name => 'password', :value => session[:password]}
+  %input{:type => 'hidden', :name => 'phone', :value => session[:phone]}
+  %input{:type => 'hidden', :name => 'fwd_flag'}
+
+  %button{:type => "submit", :onclick => "javascript:setFwdFlag(true);"}="Enable"
+  %button{:type => "submit", :onclick => "javascript:setFwdFlag(false);"}="Disable"
+
+%br
+  %label
+    ="Response: <b>#{session[:message]}</b>" if session[:message]

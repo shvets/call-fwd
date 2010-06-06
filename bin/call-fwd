@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+# encoding: utf-8
+
+require 'rubygems' unless RUBY_VERSION =~ /1.9.*/
+
+$:.unshift(File::join(File::dirname(File::dirname(__FILE__)), "lib"))
+
+$KCODE='u'
+
+require 'call_fwd'
+
+require 'vegas'
+
+trap('INT') { puts "Program was interrupted..."; exit }
+
+Vegas::Runner.new(CallFwd::App, 'call-fwd')
+
