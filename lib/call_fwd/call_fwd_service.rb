@@ -4,6 +4,15 @@ Webrat.configure do |config|
   config.mode = :mechanize
 end
 
+module Webrat
+  module Logging #:nodoc:
+
+   def logger # :nodoc:
+      Logger.new(STDOUT)
+    end
+  end
+end
+
 class CallFwdService
   HOME_URL = "https://secure.vonage.com/webaccount"
   LOGIN_URL = "#{HOME_URL}/public/login.htm"
