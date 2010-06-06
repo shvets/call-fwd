@@ -10,5 +10,6 @@ gem "launchy"
 gem "haml"
 gem "webrat"
 gem "heroku"
+gem "mechanize"
 
 gem "rspec", :require => "spec"

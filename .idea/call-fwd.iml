@@ -39,6 +39,12 @@
     </requirement>
     <requirement>
       <requirement>
+        <dependency name="mechanize" version="0" bound="GREATER_OR_EQUAL" git="false" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
         <dependency name="nokogiri" version="0" bound="GREATER_OR_EQUAL" git="false" />
       </requirement>
       <source from="Gemfile" />
@@ -89,6 +95,10 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] git (v1.2.5, /Users/oshvets/.rvm/gems/ruby-1.8.7-p249/gems/git-1.2.5)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] vegas (v0.1.7, /Users/oshvets/.rvm/gems/ruby-1.8.7-p249/gems/vegas-0.1.7)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rubyforge (v2.0.4, /Users/oshvets/.rvm/gems/ruby-1.8.7-p249/gems/rubyforge-2.0.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] mechanize (v1.0.0, /Users/oshvets/.rvm/gems/ruby-1.8.7-p249/gems/mechanize-1.0.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] mime-types (v1.16, /Users/oshvets/.rvm/gems/ruby-1.8.7-p249/gems/mime-types-1.16)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rest-client (v1.4.2, /Users/oshvets/.rvm/gems/ruby-1.8.7-p249/gems/rest-client-1.4.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] heroku (v1.9.9, /Users/oshvets/.rvm/gems/ruby-1.8.7-p249/gems/heroku-1.9.9)" level="application" />
   </component>
 </module>
 

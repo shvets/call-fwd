@@ -4,6 +4,7 @@ require 'sinatra/base'
 require 'haml'
 require 'sass'
 require 'nokogiri'
+require 'mechanize'
 
 $:.unshift(File.expand_path(File.join(File.dirname(__FILE__))))
 
