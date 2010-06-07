@@ -11,23 +11,40 @@
   ="Username:"
   = session[:usrename]
 %br/
-%br/
 
 %label
   = "Phone Number:"
-  = session[:phone]
-%br/
+  = session[:phone_number]
 %br/
 
 %label
-  ="Call Forwarding:"
+  = "Rings for (seconds):"
+  %select{:name => 'callForwardingSeconds'}
+    - attrs = {:value => '1'}
+    - attrs.merge!({:selected => true}) if session[:rings_for_seconds] == '1'
+
+    %option{attrs}="Instantly"
+    - (2..50).each do |index|
+      - attrs = {:value => index}
+      - attrs.merge!({:selected => true}) if session[:rings_for_seconds] == index.to_s
+      %option{attrs}="#{index} Seconds"
+    end
+%br/
+
+%label{:for => "forwarding_number"}
+  = "Forwarding Number:"
+
 %form{:action => "/call_fwd", :method => "post"}
+  %input{:name => "forwarding_number", :value => session[:forwarding_number]}
+  %br
+
   %input{:type => 'hidden', :name => 'username', :value => session[:usrename]}
   %input{:type => 'hidden', :name => 'password', :value => session[:password]}
-  %input{:type => 'hidden', :name => 'phone', :value => session[:phone]}
+  %input{:type => 'hidden', :name => 'phone_number', :value => session[:phone_number]}
+  %input{:type => 'hidden', :name => 'rings_for_seconds', :value => session[:rings_for_seconds]}
   %input{:type => 'hidden', :name => 'fwd_flag'}
 
-  %button{:type => "submit", :onclick => "javascript:setFwdFlag(true);"}="Enable"
+  %button{:type => "submit", :onclick => "javascript:setFwdFlag(true);"}="Enable/Update"
   %button{:type => "submit", :onclick => "javascript:setFwdFlag(false);"}="Disable"
 
 %br

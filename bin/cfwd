@@ -12,8 +12,9 @@ require 'cfwd'
 trap('INT') { puts "Program was interrupted..."; exit }
 
 if __FILE__ == $0
-  service = CallFwdService.new
   credentials = PasswordManager.ask_credentials
+
+  service = CallFwdService.new *credentials
 
   if ARGV.size == 0
     command = '+'
@@ -23,9 +24,9 @@ if __FILE__ == $0
 
   case command
     when '+' then
-      puts service.enable *credentials
+      puts service.enable
 
     when '-' then
-      puts service.disable *credentials
+      puts service.disable
   end
 end
