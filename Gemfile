@@ -11,5 +11,6 @@ gem "haml"
 gem "webrat"
 gem "heroku"
 gem "mechanize"
+gem "rack"
 
 gem "rspec", :require => "spec"

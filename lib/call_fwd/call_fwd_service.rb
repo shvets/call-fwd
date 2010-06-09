@@ -1,9 +1,8 @@
-include Webrat::Methods
-
 Webrat.configure do |config|
   config.mode = :mechanize
 end
 
+# disable file logging for heroku
 module Webrat
   module Logging #:nodoc:
 
@@ -13,7 +12,11 @@ module Webrat
   end
 end
 
+include CallFwdHelper
+
 class CallFwdService
+  include Webrat::Methods
+  
   HOME_URL = "https://secure.vonage.com/webaccount"
   LOGIN_URL = "#{HOME_URL}/public/login.htm"
   FEATURES_URL = "#{HOME_URL}/features/index.htm"
@@ -46,7 +49,6 @@ class CallFwdService
       response = visit(HOME_URL)
 
       did = extract_phone_number(response.body)
-      p did.class
 
       click_link("Features")
       response = visit("#{CALL_FORWARDING_URL}?did=#{did}&callForwardingButton=Configure")
@@ -60,7 +62,7 @@ class CallFwdService
     end
   end
 
-  def enable forwarding_number=nil
+  def enable forwarding_number=nil, call_forwarding_seconds=nil
     if not login
       message = "Incorrect login info!"
     else
@@ -74,7 +76,7 @@ class CallFwdService
 
       set_hidden_field 'enableCallForwarding', :to => true
 
-      select /Instantly/, :from => 'callForwardingSeconds'
+      select /#{call_forwarding_seconds_as_text(call_forwarding_seconds)}/, :from => 'callForwardingSeconds' unless call_forwarding_seconds.nil?
       fill_in "singleAddress", :with => forwarding_number unless forwarding_number.nil?
 
       begin

@@ -21,6 +21,10 @@ module CallFwd
       sass :stylesheet
     end
 
+    get '/favicon.ico' do
+      File.open(File.dirname(__FILE__) + '/../../views/favicon.ico', "rb") {|io| io.read }
+    end
+
     get '/login' do
       haml :login
     end
@@ -69,7 +73,7 @@ module CallFwd
         message = ""
 
         if request[:fwd_flag] == 'true'
-          message = service.enable request[:forwarding_number]
+          message = service.enable request[:forwarding_number], request[:rings_for_seconds]
           session[:forwarding_number] = request[:forwarding_number]
           session[:rings_for_seconds] = request[:rings_for_seconds]
         end
@@ -82,6 +86,10 @@ module CallFwd
 
         redirect "/"
       end
+    end
+
+    helpers do
+      include CallFwdHelper
     end
 
     private

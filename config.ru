@@ -1,6 +1,6 @@
 # To use with thin
 #  thin start -p PORT -R config.ru
-require File.join(File.dirname(__FILE__), 'lib', 'call_fwd')
+require ::File.join(::File.dirname(__FILE__), 'lib', 'call_fwd')
 
 trap(:INT) { exit }
 
@@ -11,6 +11,8 @@ app = Rack::Builder.new {
 
 run app
 
-#require 'launchy'
-#
-#Launchy::Browser.run("http://localhost:9292")
+if ENV['launchy']
+  require 'launchy'
+
+  Launchy::Browser.run("http://localhost:9292")
+end

@@ -8,6 +8,7 @@ require 'sass'
 require 'webrat'
 
 require 'mongrel'
+require 'call_fwd/call_fwd_helper'
 require 'call_fwd/call_fwd_service'
 require 'call_fwd/app'
 

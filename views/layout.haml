@@ -4,9 +4,7 @@
     %meta{:'http-equiv' => 'Content-Type', :content => 'text/html; charset=UTF-8'}
     %title= "Call Forwarding"
     %link{ :href =>"/stylesheet.css", :rel => "stylesheet", :type => "text/css", :media => "screen" }
+    %link{:rel => "shortcut icon", :href => "/favicon.ico"}
   %body
     #container
-      %p#title=page.page_title if defined?(page.page_title)
-      %p
-
       = yield

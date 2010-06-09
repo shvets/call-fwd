@@ -7,5 +7,6 @@ require 'haml'
 require 'sass'
 require 'webrat'
 
+require 'call_fwd/call_fwd_helper'
 require 'call_fwd/call_fwd_service'
 require 'call_fwd/app'
