@@ -6,43 +6,51 @@
   function setRingsForSeconds(value) {
     document.getElementsByName("rings_for_seconds")[0].value = value;
   }
-%a{:href => "logout", :style => "font-size: 24px"}="Logout"
-%br
-%br
 
-%label{:style => "font-size: 24px"}
-  ="Username: #{session[:usrename]}"
-%br/
+%table.centered
+  %tr
+    %td
+      %a{:href => "logout"}="Logout"
+      %td
+  %tr
+    %td
+      %label="Username: "
+    %td="#{session[:usrename]}"
+  %tr
+    %td
+      %label="Phone Number:"
+    %td="#{session[:phone_number]}"
+  %tr
+    %td
+      %label="Rings for (seconds):"
+    %td
+      %select{:name => 'callForwardingSeconds', :onclick => "setRingsForSeconds(this.value);"}
+        - (1..50).each do |index|
+          - attrs = {:value => index}
+          - attrs.merge!({:selected => true}) if session[:rings_for_seconds] == index.to_s
+          %option{attrs}=call_forwarding_seconds_as_text(index)
+        end
 
-%label{:style => "font-size: 24px"}
-  ="Phone Number: #{session[:phone_number]}"
-%br/
+  %form{:action => "/call_fwd", :method => "post"}
+    %input{:type => 'hidden', :name => 'username', :value => session[:usrename]}
+    %input{:type => 'hidden', :name => 'password', :value => session[:password]}
+    %input{:type => 'hidden', :name => 'phone_number', :value => session[:phone_number]}
+    %input{:type => 'hidden', :name => 'rings_for_seconds', :value => session[:rings_for_seconds]}
+    %input{:type => 'hidden', :name => 'fwd_flag'}
 
-%label{:style => "font-size: 24px"}
-  ="Rings for (seconds):"
-  %select{:name => 'callForwardingSeconds', :onclick => "setRingsForSeconds(this.value);", :style => "font-size: 24px"}
-    - (1..50).each do |index|
-      - attrs = {:value => index}
-      - attrs.merge!({:selected => true}) if session[:rings_for_seconds] == index.to_s
-      %option{attrs}=call_forwarding_seconds_as_text(index)
-    end
-%br/
-
-%form{:action => "/call_fwd", :method => "post"}
-  %label{:for => "forwarding_number", :style => "font-size: 24px"}
-    = "Forwarding Number:"
-  %input{:name => "forwarding_number", :value => session[:forwarding_number]}
-  %br
-
-  %input{:type => 'hidden', :name => 'username', :value => session[:usrename]}
-  %input{:type => 'hidden', :name => 'password', :value => session[:password]}
-  %input{:type => 'hidden', :name => 'phone_number', :value => session[:phone_number]}
-  %input{:type => 'hidden', :name => 'rings_for_seconds', :value => session[:rings_for_seconds]}
-  %input{:type => 'hidden', :name => 'fwd_flag'}
-
-  %button{:type => "submit", :onclick => "javascript:setFwdFlag(true);", :style => "font-size: 24px"}="Enable/Update"
-  %button{:type => "submit", :onclick => "javascript:setFwdFlag(false);", :style => "font-size: 24px"}="Disable"
-
-%br
-  %label
-    ="Message: <b>#{session[:message]}</b>" if session[:message]
+    %tr
+      %td
+        %label{:for => "forwarding_number"}= "Forwarding Number:"
+      %td
+        %input{:name => "forwarding_number", :value => session[:forwarding_number]}
+    %tr
+      %td
+        %button{:type => "submit", :onclick => "javascript:setFwdFlag(true);"}="Enable/Update"
+      %td
+        %button{:type => "submit", :onclick => "javascript:setFwdFlag(false);"}="Disable"
+    - if session[:message]
+      %tr
+        %td
+          %label="Message: "
+        %td
+          %b="#{session[:message]}"

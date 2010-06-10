@@ -1,11 +1,15 @@
-%form{:action => "/login", :method => "post"}
-  %br/
-  %br/
-  %label{:for => "username"}= "Username: "
-  %input{:name => "username"}
-  %br/
-  %label{:for => "password"}= "Password: "
-  %input{:name => "password", :type => "password"}
-  %br/
-  %br/
-  %button{:type => "submit"}="Submit"
+%table.centered
+  %form{:action => "/login", :method => "post"}
+    %tr
+      %td
+        %label{:for => "username"}= "Username: "
+      %td
+        %input{:name => "username"}
+    %tr
+      %td
+        %label{:for => "password"}= "Password: "
+      %td
+        %input{:name => "password", :type => "password"}
+    %tr
+      %td{:colspan => 2}
+        %button{:type => "submit"}="Submit"

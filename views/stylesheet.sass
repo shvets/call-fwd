@@ -1,52 +1,36 @@
+.font-size
+  :font-size 24px
+
 body
+  @extend .font-size
   :background white
   :text-align left
   :font-family Monaco, Verdana
-  :font-size 14px
   :color black
-h1
-  :color #97bf0d
-h2
-  :font-size 14px
-  :font-weight normal
 
-#title
-  font-weight: bold
+.centered
+  :position absolute
+  :top 0
+  :right 0
+  :bottom 0
+  :left 0
+  :width 50%
+  :height 50%
+  :margin auto
 
-#channel
-  font-style: italic
+label
+  @extend .font-size
+  :font-style italic
 
-td#name
-  :width 550px
+input
+  @extend .font-size
+  :width 300px
+  :padding 3px
+  
+button
+  @extend .font-size
+  :font-style bold
 
-#description
-  :width 900px
+select
+  @extend .font-size
 
-td#channel
-  :width 100px
-
-tr#page_browser
-  :text-align center
-
-#container
-  :text-align center
-  :margin 0 auto
-
-  form
-    :font-size 24px
-    label
-      :display block
-      :font-size 24px
-
-    input
-      :width 450px
-      :padding 3px
-      :font-size 24px
-    textarea
-      :width 460px
-      :height 150px
-      :font-size 24px
-      :font-family Monaco, Verdana
-      :padding 3px
-    span
-      :color #fff
