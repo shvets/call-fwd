@@ -36,7 +36,7 @@
       <file leaf-file-name="stylesheet.sass" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/stylesheet.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="18" selection-start="413" selection-end="413" vertical-scroll-proportion="0.8072289">
+            <state line="1" column="15" selection-start="26" selection-end="26" vertical-scroll-proportion="0.032128513">
               <folding />
             </state>
           </provider>
@@ -46,6 +46,15 @@
         <entry file="file://$PROJECT_DIR$/views/login.haml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="1" column="47" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="deploy_gem.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deploy_gem.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="25" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -120,52 +129,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="call-fwd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="call-fwd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="call-fwd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="call-fwd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="call-fwd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="call-fwd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="call-fwd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="call_fwd" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -374,13 +337,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deploy_gem.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="41" selection-start="134" selection-end="134" vertical-scroll-proportion="0.2570281">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/call_fwd/app.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="90" selection-start="685" selection-end="685" vertical-scroll-proportion="0.4939759">
@@ -395,13 +351,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/login.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="47" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/layout.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="4" selection-start="305" selection-end="305" vertical-scroll-proportion="0.2570281">
@@ -409,9 +358,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/login.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="47" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy_gem.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="25" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/stylesheet.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="18" selection-start="413" selection-end="413" vertical-scroll-proportion="0.8072289">
+        <state line="1" column="15" selection-start="26" selection-end="26" vertical-scroll-proportion="0.032128513">
           <folding />
         </state>
       </provider>
