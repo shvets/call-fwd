@@ -48,6 +48,9 @@
         %input{:name => "forwarding_number", :value => session[:forwarding_number]}
     %tr
       %td
+        %br
+    %tr
+      %td
         %button{:type => "submit", :onclick => "javascript:setFwdFlag(true);"}="Enable/Update"
       %td
         %button{:type => "submit", :onclick => "javascript:setFwdFlag(false);"}="Disable"

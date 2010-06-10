@@ -27,25 +27,25 @@
       <file leaf-file-name="index.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="9" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0">
+            <state line="38" column="42" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stylesheet.sass" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="stylesheet.sass" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/stylesheet.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="10" selection-start="344" selection-end="344" vertical-scroll-proportion="0.48372093">
+            <state line="26" column="10" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.haml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="login.haml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/login.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="36" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
+            <state line="15" column="25" selection-start="373" selection-end="373" vertical-scroll-proportion="0.27906978">
               <folding />
             </state>
           </provider>
@@ -81,9 +81,9 @@
         <option value="$PROJECT_DIR$/lib/call_fwd/call_fwd_service.rb" />
         <option value="$PROJECT_DIR$/lib/call_fwd/app.rb" />
         <option value="$PROJECT_DIR$/views/layout.haml" />
+        <option value="$PROJECT_DIR$/views/stylesheet.sass" />
         <option value="$PROJECT_DIR$/views/index.haml" />
         <option value="$PROJECT_DIR$/views/login.haml" />
-        <option value="$PROJECT_DIR$/views/stylesheet.sass" />
       </list>
     </option>
   </component>
@@ -115,24 +115,7 @@
     <panes>
       <pane id="Favorites" />
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="call-fwd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="call-fwd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="call-fwd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
       <pane id="Scope" />
     </panes>
@@ -358,23 +341,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/stylesheet.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="10" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/index.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="9" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0">
+        <state line="38" column="42" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/login.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="36" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/stylesheet.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="10" selection-start="344" selection-end="344" vertical-scroll-proportion="0.48372093">
+        <state line="15" column="25" selection-start="373" selection-end="373" vertical-scroll-proportion="0.27906978">
           <folding />
         </state>
       </provider>
