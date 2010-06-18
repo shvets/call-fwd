@@ -42,10 +42,64 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.haml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="login.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/login.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="25" selection-start="373" selection-end="373" vertical-scroll-proportion="0.27906978">
+            <state line="15" column="25" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/call_fwd/app.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="0" selection-start="862" selection-end="862" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="request.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/request.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="171" column="0" selection-start="6456" selection-end="6456" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="call_fwd_service.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/call_fwd/call_fwd_service.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="73" column="16" selection-start="1540" selection-end="1540" vertical-scroll-proportion="0.13152401">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scope.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../.rvm/gems/ruby-1.8.7-p249/gems/webrat-0.7.1/lib/webrat/core/scope.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="274" column="8" selection-start="10562" selection-end="10562" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../.rvm/gems/ruby-1.8.7-p249/gems/sinatra-1.0/lib/sinatra/base.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="604" column="0" selection-start="18948" selection-end="18948" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="start.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/start.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="33" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -78,12 +132,13 @@
         <option value="$PROJECT_DIR$/lib/call_fwd/call_fwd_helper.rb" />
         <option value="$PROJECT_DIR$/lib/call_fwd.rb" />
         <option value="$PROJECT_DIR$/lib/start.rb" />
-        <option value="$PROJECT_DIR$/lib/call_fwd/call_fwd_service.rb" />
         <option value="$PROJECT_DIR$/lib/call_fwd/app.rb" />
         <option value="$PROJECT_DIR$/views/layout.haml" />
         <option value="$PROJECT_DIR$/views/stylesheet.sass" />
         <option value="$PROJECT_DIR$/views/index.haml" />
         <option value="$PROJECT_DIR$/views/login.haml" />
+        <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/lib/call_fwd/call_fwd_service.rb" />
       </list>
     </option>
   </component>
@@ -113,11 +168,28 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Favorites" />
       <pane id="ProjectPane">
-        <subPane />
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="call-fwd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="call-fwd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="call-fwd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -215,19 +287,19 @@
     <supportedVersion>125</supportedVersion>
   </component>
   <component name="ToolWindowManager">
-    <frame x="118" y="22" width="1559" height="982" extended-state="0" />
+    <frame x="118" y="22" width="1532" height="936" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2495114" sideWeight="0.5923423" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39977476" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2539788" sideWeight="0.6425178" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34916866" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32897863" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32995495" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -266,34 +338,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/rubystubs18/kernel.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="737" column="6" selection-start="28215" selection-end="28215" vertical-scroll-proportion="0.33255813" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../.rvm/gems/ruby-1.8.7-p249/gems/sinatra-1.0/lib/sinatra/base.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="604" column="0" selection-start="18948" selection-end="18948" vertical-scroll-proportion="0.29642856" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rakefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/call_fwd/call_fwd_service.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="0" selection-start="1395" selection-end="1395" vertical-scroll-proportion="0.5582329" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/call_fwd/call_fwd_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/start.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="33" selection-start="288" selection-end="288" vertical-scroll-proportion="0.32128513" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/cfwd">
@@ -308,56 +355,79 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="227" selection-end="227" vertical-scroll-proportion="0.5140562">
-          <folding />
-        </state>
+        <state line="16" column="0" selection-start="227" selection-end="227" vertical-scroll-proportion="0.5140562" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config.ru">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="36" selection-start="217" selection-end="217" vertical-scroll-proportion="0.28915662">
+        <state line="9" column="36" selection-start="217" selection-end="217" vertical-scroll-proportion="0.28915662" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="4" selection-start="305" selection-end="305" vertical-scroll-proportion="0.2570281" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="42" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/stylesheet.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="10" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy_gem.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="25" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/login.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="25" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/start.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="33" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/request.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="171" column="0" selection-start="6456" selection-end="6456" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../.rvm/gems/ruby-1.8.7-p249/gems/sinatra-1.0/lib/sinatra/base.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="604" column="0" selection-start="18948" selection-end="18948" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../.rvm/gems/ruby-1.8.7-p249/gems/webrat-0.7.1/lib/webrat/core/scope.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="274" column="8" selection-start="10562" selection-end="10562" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/call_fwd/app.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="90" selection-start="685" selection-end="685" vertical-scroll-proportion="0.4939759">
+        <state line="34" column="0" selection-start="862" selection-end="862" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.haml">
+    <entry file="file://$PROJECT_DIR$/lib/call_fwd/call_fwd_service.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="4" selection-start="305" selection-end="305" vertical-scroll-proportion="0.2570281">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deploy_gem.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="25" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/stylesheet.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="10" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="42" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/login.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="25" selection-start="373" selection-end="373" vertical-scroll-proportion="0.27906978">
+        <state line="73" column="16" selection-start="1540" selection-end="1540" vertical-scroll-proportion="0.13152401">
           <folding />
         </state>
       </provider>

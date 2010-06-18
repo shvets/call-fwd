@@ -6,7 +6,7 @@ end
 module Webrat
   module Logging #:nodoc:
 
-   def logger # :nodoc:
+    def logger # :nodoc:
       Logger.new(STDOUT)
     end
   end
@@ -16,7 +16,7 @@ include CallFwdHelper
 
 class CallFwdService
   include Webrat::Methods
-  
+
   HOME_URL = "https://secure.vonage.com/webaccount"
   LOGIN_URL = "#{HOME_URL}/public/login.htm"
   FEATURES_URL = "#{HOME_URL}/features/index.htm"
@@ -25,32 +25,40 @@ class CallFwdService
   def initialize username, password
     @username = username
     @password = password
+    @logged_in = false
   end
 
   def login
-    visit(LOGIN_URL)
+    if not @logged_in
+      visit(LOGIN_URL)
 
-    fill_in('username', :with => @username)
-    fill_in('password', :with => @password)
+      fill_in('username', :with => @username)
+      fill_in('password', :with => @password)
 
-    response = click_button("Sign In")
+      response = click_button("Sign In")
 
-    response.header['set-cookie'].nil? ? false : true
+      if response.header['set-cookie'].nil?
+        @logged_in = false
+      else
+        @logged_in = true
+      end
+    end
   end
 
   def logout
-    visit(HOME_URL)
+    if @logged_in
+      visit(HOME_URL)
 
-    click_link("Log Out")
+      click_link("Logout")
+    end
   end
 
   def customer_info
-    if login
+    if @logged_in
       response = visit(HOME_URL)
 
       did = extract_phone_number(response.body)
 
-      click_link("Features")
       response = visit("#{CALL_FORWARDING_URL}?did=#{did}&callForwardingButton=Configure")
 
       forwarding_number = extract_forwarding_number(response.body)
@@ -129,7 +137,7 @@ class CallFwdService
   def extract_phone_number html
     doc = Nokogiri::HTML(html)
 
-    doc.css("#dashboard #received_calls tr td b").text.gsub(/(\(|\)|-)/, '')
+    doc.css(".snippet_col_normal_right").text.gsub(/(\(|\)|-|\n|\r|\t)/, '')
   end
 
   def extract_forwarding_number html
