@@ -84,7 +84,7 @@ class CallFwdService
 
       set_hidden_field 'enableCallForwarding', :to => true
 
-      select /#{call_forwarding_seconds_as_text(call_forwarding_seconds)}/, :from => 'callForwardingSeconds' unless call_forwarding_seconds.nil?
+      select /#{call_forwarding_seconds_as_text(call_forwarding_seconds.to_i)}/, :from => 'callForwardingSeconds' unless call_forwarding_seconds.nil?
       fill_in "singleAddress", :with => forwarding_number unless forwarding_number.nil?
 
       begin

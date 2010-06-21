@@ -69,10 +69,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="call_fwd_service.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="call_fwd_service.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/call_fwd/call_fwd_service.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="16" selection-start="1540" selection-end="1540" vertical-scroll-proportion="0.13152401">
+            <state line="73" column="16" selection-start="1540" selection-end="1540" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -105,10 +105,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deploy_gem.txt" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="deploy_gem.txt" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/deploy_gem.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="25" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
+            <state line="9" column="145" selection-start="157" selection-end="157" vertical-scroll-proportion="0.29149798">
               <folding />
             </state>
           </provider>
@@ -125,7 +125,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/deploy_gem.txt" />
         <option value="$PROJECT_DIR$/bin/cfwd" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config.ru" />
@@ -139,6 +138,7 @@
         <option value="$PROJECT_DIR$/views/login.haml" />
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/lib/call_fwd/call_fwd_service.rb" />
+        <option value="$PROJECT_DIR$/deploy_gem.txt" />
       </list>
     </option>
   </component>
@@ -196,7 +196,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.searchVisible" value="true" />
-    <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
+    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="recentsLimit" value="5" />
   </component>
   <component name="RunManager" selected="Ruby.call-fwd">
@@ -295,7 +295,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2539788" sideWeight="0.6425178" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34916866" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34916866" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32897863" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -378,11 +378,6 @@
         <state line="26" column="10" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deploy_gem.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="25" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/login.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="25" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
@@ -427,7 +422,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/call_fwd/call_fwd_service.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="16" selection-start="1540" selection-end="1540" vertical-scroll-proportion="0.13152401">
+        <state line="73" column="16" selection-start="1540" selection-end="1540" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy_gem.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="145" selection-start="157" selection-end="157" vertical-scroll-proportion="0.29149798">
           <folding />
         </state>
       </provider>
