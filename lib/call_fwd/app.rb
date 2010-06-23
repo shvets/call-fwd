@@ -49,14 +49,16 @@ module CallFwd
     end
 
     get '/logout' do
-      session[:logged_in] = false
-      session[:usrename] = nil
-      session[:password] = nil
-      session[:phone_number] = nil
-      session[:forwarding_number] = nil
-      session[:rings_for_seconds] = nil
-      session[:message] = nil
+#      session[:logged_in] = false
+#      session[:usrename] = nil
+#      session[:password] = nil
+#      session[:phone_number] = nil
+#      session[:forwarding_number] = nil
+#      session[:rings_for_seconds] = nil
+#      session[:message] = nil
 
+      session.clear
+      
       haml :login
     end
 
