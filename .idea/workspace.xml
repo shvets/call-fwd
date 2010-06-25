@@ -3,13 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="76f3921b-885f-42c7-abeb-5de775b71d31" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.haml" afterPath="$PROJECT_DIR$/views/index.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/call-fwd.iml" afterPath="$PROJECT_DIR$/.idea/call-fwd.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/call_fwd/app.rb" afterPath="$PROJECT_DIR$/lib/call_fwd/app.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
-    <ignored path=".idea/workspace.xml" />
     <ignored path="call-fwd.iws" />
+    <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,20 +45,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deploy_gem.txt" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="deploy_gem.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deploy_gem.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="37" selection-end="74" vertical-scroll-proportion="0.08261618">
+            <state line="9" column="31" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.haml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="login.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/login.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="25" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/layout.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="4" selection-start="398" selection-end="398" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.haml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/index.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="79" selection-start="946" selection-end="946" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="42" column="4" selection-start="1330" selection-end="1330" vertical-scroll-proportion="0.19279279">
+              <folding>
+                <marker date="1277501201000" expanded="true" signature="799:1019" placeholder="do ... end" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -259,6 +276,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="76f3921b-885f-42c7-abeb-5de775b71d31" name="Default" comment="" />
       <created>1277329790126</created>
       <updated>1277329790126</updated>
     </task>
@@ -324,11 +342,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/layout.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="4" selection-start="305" selection-end="305" vertical-scroll-proportion="0.2570281" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/stylesheet.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="10" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0" />
@@ -364,11 +377,6 @@
         <state line="274" column="8" selection-start="10562" selection-end="10562" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/login.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="25" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/request.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="171" column="0" selection-start="6456" selection-end="6456" vertical-scroll-proportion="0.0" />
@@ -389,13 +397,6 @@
         <state line="86" column="0" selection-start="1844" selection-end="1844" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="79" selection-start="946" selection-end="946" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/call_fwd/app.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="12" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0">
@@ -405,8 +406,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/deploy_gem.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="37" selection-end="74" vertical-scroll-proportion="0.08261618">
+        <state line="9" column="31" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/login.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="25" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="4" selection-start="398" selection-end="398" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="4" selection-start="1330" selection-end="1330" vertical-scroll-proportion="0.19279279">
+          <folding>
+            <marker date="1277501201000" expanded="true" signature="799:1019" placeholder="do ... end" />
+          </folding>
         </state>
       </provider>
     </entry>

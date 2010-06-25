@@ -1,11 +1,12 @@
 :javascript
-  function setFwdFlag(value) {
-    document.getElementsByName("fwd_flag")[0].value = value;
+  function submitForm(fwdFlag) {
+    document.getElementsByName("fwd_flag")[0].value = fwdFlag;
+    document.getElementsByName("rings_for_seconds")[0].value = document.getElementsByName("callForwardingSeconds")[0].value;
   }
 
-  function setRingsForSeconds(value) {
-    document.getElementsByName("rings_for_seconds")[0].value = value;
-  }
+-#  function setRingsForSeconds(value) {
+-#    document.getElementsByName("rings_for_seconds")[0].value = value;
+-#  }
 
 %table.centered
   %tr
@@ -24,13 +25,6 @@
       %label="Phone Number:"
     %td="#{session[:phone_number]}"
 
-  %form{:action => "/call_fwd", :method => "post"}
-    %input{:type => 'hidden', :name => 'username', :value => session[:usrename]}
-    %input{:type => 'hidden', :name => 'password', :value => session[:password]}
-    %input{:type => 'hidden', :name => 'phone_number', :value => session[:phone_number]}
-    %input{:type => 'hidden', :name => 'rings_for_seconds', :value => session[:rings_for_seconds]}
-    %input{:type => 'hidden', :name => 'fwd_flag'}
-
     %tr
       %td
         %label="Rings for (seconds):"
@@ -42,6 +36,14 @@
             %option{attrs}=call_forwarding_seconds_as_text(index)
           end
 
+  %form{:action => "/call_fwd", :method => "post"}
+    %input{:type => 'hidden', :name => 'username', :value => session[:usrename]}
+    %input{:type => 'hidden', :name => 'password', :value => session[:password]}
+    %input{:type => 'hidden', :name => 'phone_number', :value => session[:phone_number]}
+    
+    %input{:type => 'hidden', :name => 'rings_for_seconds'}
+    %input{:type => 'hidden', :name => 'fwd_flag'}
+
     %tr
       %td
         %label{:for => "forwarding_number"}= "Forwarding Number:"
@@ -52,9 +54,9 @@
         %br
     %tr
       %td
-        %button{:type => "submit", :onclick => "javascript:setFwdFlag(true);"}="Enable/Update"
+        %button{:type => "submit", :onclick => "submitForm(true); return true;"}="Enable/Update"
       %td
-        %button{:type => "submit", :onclick => "javascript:setFwdFlag(false);"}="Disable"
+        %button{:type => "submit", :onclick => "submitForm(false); return true;"}="Disable"
     - if session[:message]
       %tr
         %td
